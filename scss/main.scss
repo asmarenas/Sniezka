@@ -1,0 +1,33 @@
+@import "settings";
+@import "menu";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  color: $text-color;
+  @include background-image;
+}
+
+.main {
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  span {
+    color: $secondary-color;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}

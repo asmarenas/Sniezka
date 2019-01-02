@@ -1,0 +1,74 @@
+.menu-btn {
+  position: absolute;
+  z-index: 2;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer; }
+  .menu-btn .btn-line {
+    display: block;
+    background: white;
+    width: 40px;
+    height: 6px;
+    margin-bottom: 7px;
+    transition: all 0.2s ease-in-out; }
+  .menu-btn.open .btn-line:nth-child(1) {
+    transform: rotate(44deg);
+    transform-origin: top left; }
+  .menu-btn.open .btn-line:nth-child(2) {
+    opacity: 0; }
+  .menu-btn.open .btn-line:nth-child(3) {
+    transform: rotate(-44deg);
+    transform-origin: bottom left; }
+
+.menu-list {
+  border: 1px solid white;
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  background: #436499; }
+  .menu-list li {
+    border: 1px solid white;
+    list-style: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 15%;
+    padding: 1rem; }
+    .menu-list li:hover {
+      color: #ffb685;
+      transition: all 0.5s ease-out; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+  background: url("../img/alone-cold-footprints-897014.jpg");
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  body:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(67, 100, 153, 0.7); }
+
+.main {
+  position: absolute;
+  top: 20vh;
+  left: 20vw; }
+  .main h1 {
+    font-size: 5rem; }
+  .main span {
+    color: #ffb685; }
+  .main h3 {
+    font-size: 1.5rem; }
