@@ -1,14 +1,15 @@
 {
-  "name": "portfolio-website",
+  "name": "sniezka",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass --recursive -w scss/ -o dist/css/  "
+    "sass": "node-sass --recursive -w scss/ -o dist/css/ "
   },
   "author": "me",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }
