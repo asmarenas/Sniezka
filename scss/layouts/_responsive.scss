@@ -90,8 +90,9 @@
     position: fixed;
     z-index: 1;
     width: 100vw;
-    height: 100vh;
+    height: 0;
     background: $primary-color;
+    overflow: hidden;
     opacity: 0;
 
     &-list {
@@ -108,8 +109,6 @@
     }
 
     .menu-item {
-      background: darken($primary-color, 5);
-      margin-top: 10px;
       text-align: center;
       a {
         font-size: 2.5rem;
@@ -117,7 +116,8 @@
     }
 
     &.show {
-      opacity: 0.9;
+      opacity: 0.96;
+      height: 100vh;
     }
   }
 
@@ -125,7 +125,8 @@
 
   .main {
     top: 30vh;
-    left: 10vw;
+    left: 7vw;
+    padding: 40px 0 0 50px;
     h1 {
       font-size: 4rem;
     }
@@ -146,9 +147,9 @@
   // Location page
 
   #map {
-    margin: 12vh 0;
-    width: 100%;
-    height: 88vh;
+    margin: 12vh 0 0 0;
+    width: 100vh;
+    height: 100vh;
     border: 10px solid $primary-color;
   }
 

@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass --recursive -w scss/ -o dist/css/ "
+    "sass": "node-sass --recursive -w scss/ -o dist/css/ ",
+    "deploy": "gh-pages -d dist"
   },
   "author": "me",
   "license": "MIT",
+  "homepage": "https://asmarenas.github.io/Sniezka/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"

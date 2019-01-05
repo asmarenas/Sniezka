@@ -1,4 +1,9 @@
 // some styles are inherited from page1 scss
+
+#location-bg {
+  background: $primary-color;
+}
+
 .map-container {
   display: flex;
   justify-content: center;
