@@ -75,7 +75,6 @@ body {
   padding: 20px; }
 
 #home-bg {
-  overflow: hidden;
   background: url("../img/mountain-1.jpg");
   background-position: center center;
   background-size: cover;
@@ -87,7 +86,7 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 110vw;
+    width: 100vw;
     background: rgba(67, 100, 153, 0.7); }
 
 .main {
@@ -108,7 +107,6 @@ body {
     font-size: 1.5rem; }
 
 #page1-bg {
-  overflow-x: hidden;
   background: #436499; }
 
 .page-1 {
@@ -194,16 +192,15 @@ body {
       .menu-list :nth-child(4) {
         transform: translate3d(100vw, 0, 0); }
     .menu .menu-item {
-      background: #3b5887;
-      margin-top: 10px;
       text-align: center; }
       .menu .menu-item a {
         font-size: 2.5rem; }
     .menu.show {
-      opacity: 0.9; }
+      opacity: 0.96; }
   .main {
     top: 30vh;
-    left: 10vw; }
+    left: 7vw;
+    padding: 40px 0 0 50px; }
     .main h1 {
       font-size: 4rem; }
     .main h2 {
