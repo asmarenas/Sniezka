@@ -178,8 +178,9 @@ body {
     position: fixed;
     z-index: 1;
     width: 100vw;
-    height: 100vh;
+    height: 0;
     background: #436499;
+    overflow: hidden;
     opacity: 0; }
     .menu-list {
       align-items: stretch;
@@ -199,7 +200,8 @@ body {
       .menu .menu-item a {
         font-size: 2.5rem; }
     .menu.show {
-      opacity: 0.96; }
+      opacity: 0.96;
+      height: 100vh; }
   .main {
     top: 30vh;
     left: 7vw;
@@ -214,7 +216,7 @@ body {
     flex-basis: 90%; }
   #map {
     margin: 12vh 0 0 0;
-    width: 100%;
+    width: 100vh;
     height: 100vh;
     border: 10px solid #436499; }
   .page-1 {
