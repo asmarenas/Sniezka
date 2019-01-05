@@ -1,0 +1,49 @@
+$primary-color: #436499;
+$secondary-color: #ffb685;
+$text-color: white;
+$background-image: url("../img/mountain-1.jpg");
+$background-opacity: 0.7;
+
+@mixin background-image {
+  background: $background-image;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 110vw;
+    background: rgba($primary-color, $background-opacity);
+  }
+}
+
+// media queries///
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMdPlus {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}

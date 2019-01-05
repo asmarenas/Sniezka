@@ -1,0 +1,12 @@
+// some styles are inherited from page1 scss
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  margin: 9vh 0;
+  width: 77vh;
+  height: 60vh;
+  border: 10px solid $text-color;
+}
