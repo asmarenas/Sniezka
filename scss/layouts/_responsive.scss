@@ -1,3 +1,7 @@
+///////////////////////////////////
+// Large screens  above 1024px
+//////////////////////////////////
+
 @include mediaLg {
   // Home page
 
@@ -12,16 +16,10 @@
       font-size: 5rem;
     }
   }
-
-  // Sniezka page
-
-  .img-container {
-    flex-basis: 40%;
-  }
 }
 
-//////////////////////////////////
-//       Medium screns
+////////////////////////////////////
+//       Medium screens below 768px
 //////////////////////////////////
 
 @include mediaMd {
@@ -53,6 +51,12 @@
       font-size: 4rem;
     }
   }
+
+  // Gallery
+
+  .img-container {
+    flex-basis: 43%;
+  }
 }
 
 ////////////////////////////////////
@@ -60,6 +64,7 @@
 ////////////////////////////////////
 
 @include mediaMdPlus {
+  // Menu
   .menu {
     padding: 7px 10px;
     .menu-list {
@@ -138,10 +143,23 @@
     }
   }
 
-  // Sniezka page
+  // Gallery page
 
-  .img-container {
-    flex-basis: 90%;
+  .gallery-main {
+    .gallery-container {
+      margin-top: 80px;
+      padding: 0;
+      justify-content: space-evenly;
+    }
+
+    .img-container {
+      margin: 5px 0px;
+
+      img {
+        width: 100%;
+        border: 1px solid $text-color;
+      }
+    }
   }
 
   // Location page

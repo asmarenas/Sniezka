@@ -1,0 +1,30 @@
+#gallery-bg {
+  background: $primary-color;
+}
+
+.gallery-main {
+  min-height: calc(100vh - 134px);
+  width: 100%;
+
+  .gallery-container {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img-container {
+    margin: 10px 10px;
+
+    img {
+      width: 100%;
+      border: 2px solid $text-color;
+      transition: 0.7s;
+
+      &:hover {
+        transform: scale(1.05);
+        opacity: 0.6;
+      }
+    }
+  }
+}

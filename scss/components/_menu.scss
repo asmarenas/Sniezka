@@ -51,7 +51,7 @@
     @for $i from 1 through 4 {
       :nth-child(#{$i}) {
         transform: translate3d(0, -15vh, 0);
-        transition: transform 0.3s ease-out $i * 0.04s;
+        transition: transform 0.3s ease-in-out $i * 0.04s;
       }
     }
   }

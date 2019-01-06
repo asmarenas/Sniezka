@@ -1,20 +1,9 @@
 @import "./config/settings";
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 100vh;
-  margin: 0;
-  color: $text-color;
-}
-
 @import "./components/menu";
 @import "./components/footer";
 
 @import "./pages/home";
-@import "./pages/page1";
+@import "./pages/gallery";
 @import "./pages/page3";
 @import "./layouts/responsive";
