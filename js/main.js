@@ -25,3 +25,8 @@ function togle() {
     menuStatus = false;
   }
 }
+
+// Preloader
+window.addEventListener("load", () => {
+  document.querySelector(".preloader").classList.add("preloader-hidden");
+});
