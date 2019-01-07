@@ -10,7 +10,6 @@ body {
 
 .preloader {
   position: fixed;
-  background: url("../img/preloaders/25.gif") no-repeat center;
   height: 100px;
   width: 100px;
   margin: -50px 0 0 -50px;
