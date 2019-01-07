@@ -5,15 +5,13 @@
 @include mediaLg {
   // Home page
 
-  .main {
-    h1 {
-      font-size: 7rem;
-    }
-    h2 {
-      font-size: 3rem;
-    }
-    div {
-      font-size: 5rem;
+  .home-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .banner {
+      padding: 0 0 0 0;
     }
   }
 }
@@ -39,16 +37,17 @@
 
   // Home screen
 
-  .main {
-    top: 25vh;
-    h1 {
-      font-size: 5rem;
-    }
-    h2 {
-      font-size: 3rem;
-    }
-    div {
-      font-size: 4rem;
+  .home-main {
+    .banner {
+      h1 {
+        font-size: 6rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      div {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -129,18 +128,17 @@
 
   // Home page
 
-  .main {
-    top: 30vh;
-    left: 7vw;
-    padding: 40px 0 0 50px;
-    h1 {
-      font-size: 4rem;
-    }
-    h2 {
-      font-size: 2rem;
-    }
-    div {
-      font-size: 3rem;
+  .home-main {
+    .banner {
+      h1 {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      div {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -165,19 +163,13 @@
 
   // Location page
 
-  #map {
-    margin: 12vh 0 0 0;
-    width: 100vh;
-    height: 100vh;
-    border: 10px solid $primary-color;
-  }
-
-  // Footer
-
-  .page-1 {
+  .location-main {
     min-height: calc(100vh - 58px);
-    .container {
-      padding-top: 60px;
+    align-items: flex-end;
+    #map {
+      border: 5px solid $text-color;
+      height: 80vh;
+      width: 100%;
     }
   }
 }

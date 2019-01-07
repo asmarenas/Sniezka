@@ -1,29 +1,26 @@
 #home-bg {
   @include background-image;
+  overflow: hidden;
 }
 
-.main {
-  position: absolute;
-  top: 15vh;
-  left: 15vw;
-  padding: 40px 50px;
+.home-main {
+  height: 90%;
+  .banner {
+    padding: 8rem 0 0 20rem;
 
-  h1 {
-    font-size: 9rem;
-    margin: 0;
-  }
+    h1 {
+      font-size: 9rem;
+      margin: 0;
+    }
 
-  h2 {
-    font-size: 3rem;
-    margin: 0;
-  }
+    h2 {
+      font-size: 3rem;
+      margin: 0;
+    }
 
-  div {
-    color: $secondary-color;
-    font-size: 6rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
+    div {
+      color: $secondary-color;
+      font-size: 6rem;
+    }
   }
 }

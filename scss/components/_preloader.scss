@@ -10,11 +10,14 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .preloader-hidden {
   opacity: 0;
+  img {
+    visibility: hidden;
+  }
 }
 
 .preloader-off {
