@@ -28,7 +28,9 @@
     </header>
 
     <main class="gallery-main">
-      <img src="./img/preloaders/25.gif" class="preloader"></img>
+      <div class="preloader">
+          <img src="./img/preloaders/25.gif"></img>
+      </div>
       <ul class="gallery-container  pure-js-lightbox-container">
         <li class="img-container">
           <a href="./img/sniezka-large-1.jpg">
@@ -132,9 +134,11 @@
           </a>
         </li>
         <!-- image -->
+        
       </ul>
+      <footer class="footer">Copyright &copy 2019</footer>
     </main>
-    <footer class="footer">Copyright &copy 2019</footer>
+    
     <script src="./js/main.js"></script>
     <script src="./js/pure-js-lightbox.js"></script>
 
@@ -142,12 +146,10 @@
       window.addEventListener("load", () => {
         // delays caching large images, until all document loads
         lightbox = new pureJSLightBox();
-
+      
         document
           .querySelector(".gallery-container ")
           .classList.add("show-gallery");
-
-        document.querySelector(".preloader").classList.add("preloader-hidden");
       });
     </script>
   </body>
