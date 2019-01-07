@@ -25,3 +25,11 @@ function togle() {
     menuStatus = false;
   }
 }
+// hiding preloader and moving it to z-index -1000;
+window.addEventListener("load", () => {
+  const preLoader = document.querySelector(".preloader");
+  preLoader.classList.add("preloader-hidden");
+  preLoader.addEventListener("transitionend", () => {
+    preLoader.classList.add("preloader-off");
+  });
+});
