@@ -5,7 +5,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   margin: 0;
-  padding: 0;
   color: white; }
 
 .preloader {
@@ -20,10 +19,12 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: 0.5s; }
+  transition: 0.7s; }
 
 .preloader-hidden {
   opacity: 0; }
+  .preloader-hidden img {
+    visibility: hidden; }
 
 .preloader-off {
   z-index: -1000 !important;
@@ -100,33 +101,31 @@ body {
   background: url("../img/home-bg.jpg");
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
   #home-bg:after {
     content: "";
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background: rgba(67, 100, 153, 0.7); }
 
-.main {
-  position: absolute;
-  top: 15vh;
-  left: 15vw;
-  padding: 40px 50px; }
-  .main h1 {
-    font-size: 9rem;
-    margin: 0; }
-  .main h2 {
-    font-size: 3rem;
-    margin: 0; }
-  .main div {
-    color: #ffb685;
-    font-size: 6rem; }
-  .main h3 {
-    font-size: 1.5rem; }
+.home-main {
+  height: 90%; }
+  .home-main .banner {
+    padding: 8rem 0 0 20rem; }
+    .home-main .banner h1 {
+      font-size: 9rem;
+      margin: 0; }
+    .home-main .banner h2 {
+      font-size: 3rem;
+      margin: 0; }
+    .home-main .banner div {
+      color: #ffb685;
+      font-size: 6rem; }
 
 #gallery-bg {
   background: #436499; }
@@ -158,24 +157,23 @@ body {
 #location-bg {
   background: #436499; }
 
-.map-container {
-  width: 90%;
+.location-main {
+  min-height: calc(100vh - 140px);
   display: flex;
-  justify-content: center; }
-
-#map {
-  margin: 9vh 0;
-  width: 77vh;
-  height: 60vh;
-  border: 10px solid white; }
+  justify-content: center;
+  align-items: center; }
+  .location-main #map {
+    border: 10px solid white;
+    height: 66vh;
+    width: 50%; }
 
 @media screen and (max-width: 1024px) {
-  .main h1 {
-    font-size: 7rem; }
-  .main h2 {
-    font-size: 3rem; }
-  .main div {
-    font-size: 5rem; } }
+  .home-main {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .home-main .banner {
+      padding: 0 0 0 0; } }
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -184,14 +182,12 @@ body {
       justify-content: space-evenly; }
     .menu .menu-item a {
       font-size: 1.4rem; }
-  .main {
-    top: 25vh; }
-    .main h1 {
-      font-size: 5rem; }
-    .main h2 {
-      font-size: 3rem; }
-    .main div {
-      font-size: 4rem; }
+  .home-main .banner h1 {
+    font-size: 6rem; }
+  .home-main .banner h2 {
+    font-size: 2rem; }
+  .home-main .banner div {
+    font-size: 4rem; }
   .img-container {
     flex-basis: 43%; } }
 
@@ -235,16 +231,12 @@ body {
     .menu.show {
       opacity: 0.96;
       height: 100vh; }
-  .main {
-    top: 30vh;
-    left: 7vw;
-    padding: 40px 0 0 50px; }
-    .main h1 {
-      font-size: 4rem; }
-    .main h2 {
-      font-size: 2rem; }
-    .main div {
-      font-size: 3rem; }
+  .home-main .banner h1 {
+    font-size: 5rem; }
+  .home-main .banner h2 {
+    font-size: 2rem; }
+  .home-main .banner div {
+    font-size: 3rem; }
   .gallery-main .gallery-container {
     margin-top: 80px;
     padding: 0;
@@ -254,12 +246,10 @@ body {
     .gallery-main .img-container img {
       width: 100%;
       border: 1px solid white; }
-  #map {
-    margin: 12vh 0 0 0;
-    width: 100vh;
-    height: 100vh;
-    border: 10px solid #436499; }
-  .page-1 {
-    min-height: calc(100vh - 58px); }
-    .page-1 .container {
-      padding-top: 60px; } }
+  .location-main {
+    min-height: calc(100vh - 58px);
+    align-items: flex-end; }
+    .location-main #map {
+      border: 5px solid white;
+      height: 80vh;
+      width: 100%; } }
