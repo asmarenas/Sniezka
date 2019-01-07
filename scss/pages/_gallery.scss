@@ -11,6 +11,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    transform: translateY(100vh);
+    visibility: hidden;
+    transition: all 0.5s;
+
+    &.show-gallery {
+      transform: translateY(0);
+      visibility: visible;
+    }
   }
 
   .img-container {
