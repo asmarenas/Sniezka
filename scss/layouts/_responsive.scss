@@ -161,6 +161,17 @@
     }
   }
 
+  // Weather page
+
+  .weather-main {
+    min-height: calc(100vh - 58px);
+  }
+
+  .weather-box {
+    margin-top: 20px;
+    font-size: 10.5px;
+  }
+
   // Location page
 
   .location-main {

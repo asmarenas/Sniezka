@@ -12,6 +12,7 @@
   "homepage": "https://asmarenas.github.io/Sniezka/",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "moment": "^2.23.0",
     "node-sass": "^4.11.0"
   }
 }

@@ -1,0 +1,65 @@
+#weather-bg {
+  background: $primary-color;
+}
+
+.weather-main {
+  font-size: 16px;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .weather-box {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s ease;
+
+    h2 {
+      font-size: 3em;
+      text-align: center;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .temperature {
+      position: relative;
+      font-size: 7em;
+      text-align: center;
+      span {
+        font-size: 0.2em;
+        position: absolute;
+        top: 10px;
+      }
+    }
+
+    img {
+      display: block;
+      width: 10em;
+
+      margin: 20px auto 0 auto;
+    }
+
+    .weather-info {
+      margin: 0;
+    }
+  }
+
+  .error-message {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s ease;
+  }
+
+  .show-box {
+    height: auto;
+    overflow: hidden;
+    opacity: 1;
+  }
+}

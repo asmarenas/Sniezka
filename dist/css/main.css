@@ -109,12 +109,12 @@ body {
     z-index: -1;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background: rgba(67, 100, 153, 0.7); }
 
 .home-main {
-  height: 90%; }
+  height: 100%; }
   .home-main .banner {
     padding: 8rem 0 0 20rem; }
     .home-main .banner h1 {
@@ -153,6 +153,52 @@ body {
       .gallery-main .img-container img:hover {
         transform: scale(1.05);
         opacity: 0.6; }
+
+#weather-bg {
+  background: #436499; }
+
+.weather-main {
+  font-size: 16px;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .weather-main .weather-box {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s ease; }
+    .weather-main .weather-box h2 {
+      font-size: 3em;
+      text-align: center;
+      margin: 0; }
+    .weather-main .weather-box p {
+      font-size: 1.2em;
+      text-align: center; }
+    .weather-main .weather-box .temperature {
+      position: relative;
+      font-size: 7em;
+      text-align: center; }
+      .weather-main .weather-box .temperature span {
+        font-size: 0.2em;
+        position: absolute;
+        top: 10px; }
+    .weather-main .weather-box img {
+      display: block;
+      width: 10em;
+      margin: 20px auto 0 auto; }
+    .weather-main .weather-box .weather-info {
+      margin: 0; }
+  .weather-main .error-message {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s ease; }
+  .weather-main .show-box {
+    height: auto;
+    overflow: hidden;
+    opacity: 1; }
 
 #location-bg {
   background: #436499; }
@@ -246,6 +292,11 @@ body {
     .gallery-main .img-container img {
       width: 100%;
       border: 1px solid white; }
+  .weather-main {
+    min-height: calc(100vh - 58px); }
+  .weather-box {
+    margin-top: 20px;
+    font-size: 10.5px; }
   .location-main {
     min-height: calc(100vh - 58px);
     align-items: flex-end; }
