@@ -235,7 +235,9 @@ body {
   .home-main .banner div {
     font-size: 4rem; }
   .img-container {
-    flex-basis: 43%; } }
+    flex-basis: 43%; }
+  .location-main #map {
+    width: 100%; } }
 
 @media screen and (max-width: 600px) {
   .menu {
@@ -245,7 +247,7 @@ body {
     .menu .menu-item a {
       font-size: 1rem; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .menu-btn {
     position: fixed; }
   .menu {
