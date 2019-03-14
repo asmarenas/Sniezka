@@ -25,7 +25,7 @@ function togle() {
     menuStatus = false;
   }
 }
-// hiding preloader and moving it to z-index -1000;
+// hides preloader and push it to z-index -1000;
 window.addEventListener("load", () => {
   const preLoader = document.querySelector(".preloader");
   preLoader.classList.add("preloader-hidden");

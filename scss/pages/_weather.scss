@@ -39,7 +39,7 @@
     }
 
     img {
-      display: block;
+      display: block; 
       width: 10em;
       margin: 20px auto 0 auto;
     }
@@ -54,6 +54,7 @@
     overflow: hidden;
     opacity: 0;
     transition: 1s ease;
+    text-align: center;
   }
 
   .show-box {

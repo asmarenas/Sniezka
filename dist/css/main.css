@@ -197,7 +197,8 @@ body {
     height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: 1s ease; }
+    transition: 1s ease;
+    text-align: center; }
   .weather-main .show-box {
     height: auto;
     overflow: hidden;
