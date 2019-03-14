@@ -33,7 +33,7 @@ body {
   }
 }
 
-// Media queries
+//-- Media queries --//
 
 @mixin mediaSm {
   @media screen and (max-width: 480px) {
@@ -55,6 +55,12 @@ body {
 
 @mixin mediaLg {
   @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mediaLandscape {
+  @media screen and (max-height: 450px) {
     @content;
   }
 }

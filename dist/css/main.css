@@ -95,7 +95,8 @@ body {
 .footer {
   background: #3d5b8b;
   text-align: center;
-  padding: 20px; }
+  padding: 20px;
+  font-size: 12px; }
 
 #home-bg {
   background: url("../img/home-bg.jpg");
@@ -116,7 +117,7 @@ body {
 .home-main {
   height: 100%; }
   .home-main .banner {
-    padding: 8rem 0 0 20rem; }
+    padding: 6rem 0 0 20rem; }
     .home-main .banner h1 {
       font-size: 9rem;
       margin: 0; }
@@ -131,8 +132,11 @@ body {
   background: #436499; }
 
 .gallery-main {
-  min-height: 100vh;
-  width: 100%; }
+  min-height: calc(100vh - 50px);
+  max-width: 2000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; }
   .gallery-main .gallery-container {
     padding: 25px;
     display: flex;
@@ -159,11 +163,10 @@ body {
 
 .weather-main {
   font-size: 16px;
-  min-height: calc(100vh - 140px);
+  min-height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   .weather-main .weather-box {
     height: 0;
     overflow: hidden;
@@ -189,7 +192,7 @@ body {
       width: 10em;
       margin: 20px auto 0 auto; }
     .weather-main .weather-box .weather-info {
-      margin: 0; }
+      margin: 0 0 30px 0; }
   .weather-main .error-message {
     height: 0;
     overflow: hidden;
@@ -204,13 +207,15 @@ body {
   background: #436499; }
 
 .location-main {
-  min-height: calc(100vh - 140px);
+  min-height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center; }
   .location-main #map {
     border: 10px solid white;
+    margin-bottom: 50px;
     height: 66vh;
+    min-height: 500px;
     width: 50%; }
 
 @media screen and (max-width: 1024px) {
@@ -237,7 +242,8 @@ body {
   .img-container {
     flex-basis: 43%; }
   .location-main #map {
-    width: 100%; } }
+    width: 100%;
+    margin: 20px 0 50px 0; } }
 
 @media screen and (max-width: 600px) {
   .menu {
@@ -294,8 +300,6 @@ body {
     .gallery-main .img-container img {
       width: 100%;
       border: 1px solid white; }
-  .weather-main {
-    min-height: calc(100vh - 58px); }
   .weather-box {
     margin-top: 20px;
     font-size: 10.5px; }
@@ -305,4 +309,13 @@ body {
     .location-main #map {
       border: 5px solid white;
       height: 80vh;
-      width: 100%; } }
+      width: 100%;
+      margin: 75px 0 50px 0; } }
+
+@media screen and (max-height: 450px) {
+  .home-main .banner {
+    padding: 0 0 70px 0; }
+    .home-main .banner h1 {
+      font-size: 4rem; }
+    .home-main .banner h2 {
+      font-size: 2rem; } }

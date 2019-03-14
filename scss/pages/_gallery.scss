@@ -3,15 +3,17 @@
 }
 
 .gallery-main {
-  min-height: 100vh;
-  width: 100%;
+  min-height: calc(100vh - 50px);
+  max-width: 2000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 
   .gallery-container {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     transform: translateY(100vh);
     visibility: hidden;
     transition: all 0.5s;

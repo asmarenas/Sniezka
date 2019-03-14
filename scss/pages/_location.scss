@@ -3,14 +3,16 @@
 }
 
 .location-main {
-  min-height: calc(100vh - 140px);
-
+  min-height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
+
   #map {
     border: 10px solid $text-color;
+    margin-bottom: 50px;
     height: 66vh;
+    min-height: 500px;
     width: 50%;
   }
 }

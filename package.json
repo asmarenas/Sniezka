@@ -9,7 +9,7 @@
   },
   "author": "me",
   "license": "MIT",
-  "homepage": "https://asmarenas.github.io/Sniezka/",
+  "homepage": "https://mariusjagminas.github.io/Sniezka/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "moment": "^2.23.0",

@@ -1,9 +1,9 @@
-///////////////////////////////////
-// Large screens  above 1024px
-//////////////////////////////////
+//--------------------------//
+//-- Screens below 1024px --//
+//--------------------------//
 
 @include mediaLg {
-  // Home page
+  //-- Home page --//
 
   .home-main {
     display: flex;
@@ -16,18 +16,20 @@
   }
 }
 
-////////////////////////////////////
-//       Medium screens below 768px
-//////////////////////////////////
+//-------------------------//
+//-- Screens below 768px --//
+//-------------------------//
 
 @include mediaMd {
-  // Menu
+  //-- Menu --//
 
   .menu {
     padding: 7px 10px;
+
     .menu-list {
       justify-content: space-evenly;
     }
+
     .menu-item {
       a {
         font-size: 1.4rem;
@@ -35,48 +37,54 @@
     }
   }
 
-  // Home screen
+  //--Home screen --//
 
   .home-main {
     .banner {
       h1 {
         font-size: 6rem;
       }
+
       h2 {
         font-size: 2rem;
       }
+
       div {
         font-size: 4rem;
       }
     }
   }
 
-  // Gallery
+  //--Gallery --//
 
   .img-container {
     flex-basis: 43%;
   }
 
-  // Map
+  //-- Map --//
 
   .location-main {
     #map {
       width: 100%;
+      margin: 20px 0 50px 0;
     }
   }
 }
 
-////////////////////////////////////
-//   Screens between 600 - 500 px
-////////////////////////////////////
+//---------------------------------//
+//-- Screens between 600 - 500px --//
+//---------------------------------//
 
 @include mediaMdPlus {
-  // Menu
+  //-- Menu --//
+
   .menu {
     padding: 7px 10px;
+
     .menu-list {
       justify-content: space-evenly;
     }
+
     .menu-item {
       a {
         font-size: 1rem;
@@ -85,18 +93,18 @@
   }
 }
 
-///////////////////////////////
-//      Small screens
-//////////////////////////////
+//-------------------------//
+//-- Screens below 480px --//
+//-------------------------//
 
 @include mediaSm {
-  // Button
+  //-- Button --//
 
   .menu-btn {
     position: fixed;
   }
 
-  //  Menu
+  //-- Menu --//
 
   .menu {
     position: fixed;
@@ -123,6 +131,7 @@
 
     .menu-item {
       text-align: center;
+
       a {
         font-size: 2.5rem;
       }
@@ -134,23 +143,25 @@
     }
   }
 
-  // Home page
+  //-- Home page --//
 
   .home-main {
     .banner {
       h1 {
         font-size: 5rem;
       }
+
       h2 {
         font-size: 2rem;
       }
+
       div {
         font-size: 3rem;
       }
     }
   }
 
-  // Gallery page
+  //-- Gallery page --//
 
   .gallery-main {
     .gallery-container {
@@ -169,26 +180,44 @@
     }
   }
 
-  // Weather page
-
-  .weather-main {
-    min-height: calc(100vh - 58px);
-  }
+  //-- Weather page --//
 
   .weather-box {
     margin-top: 20px;
     font-size: 10.5px;
   }
 
-  // Location page
+  //-- Location page --//
 
   .location-main {
     min-height: calc(100vh - 58px);
     align-items: flex-end;
+
     #map {
       border: 5px solid $text-color;
       height: 80vh;
       width: 100%;
+      margin: 75px 0 50px 0;
+    }
+  }
+}
+
+//--------------------------------//
+//-- Screens Height up to 450px --//
+//--------------------------------//
+
+@include mediaLandscape {
+  .home-main {
+    .banner {
+      padding: 0 0 70px 0;
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
     }
   }
 }
