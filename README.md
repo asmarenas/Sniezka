@@ -2,12 +2,11 @@
 
 My winter trip to Sniezka mountain.
 
-Website includes weather and location info of Sniezka mountain,
-and photos taken by me along the way to the summit.
+The website includes weather and location pages, and gallery page of photos taken by me along the way to the summit.
 
 [Live Preview](https://mariusjagminas.github.io/Sniezka/)
 
-### Build with:
+### Built with:
 
 - HTML5
 - SASS
